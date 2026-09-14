@@ -286,32 +286,14 @@ async def deduct(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def pl(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     keyboard = [
-        [
-            InlineKeyboardButton(
-                "🌐 GLOBE AND TM PROMO — Click here",
-                url="https://t.me/lizaloadpricelist"
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                "📱 SMART AND TNT PROMO — Click here",
-                url="https://t.me/lizaloadpricelist"
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                "📡 DITO PROMO — Click here",
-                url="https://t.me/lizaloadpricelist"
-            )
-        ]
+        [InlineKeyboardButton("🌐 GLOBE AND TM PROMO", url="https://t.me/lizaloadpricelist")],
+        [InlineKeyboardButton("📱 SMART AND TNT PROMO", url="https://t.me/lizaloadpricelist")],
+        [InlineKeyboardButton("📡 DITO PROMO", url="https://t.me/lizaloadpricelist")]
     ]
 
-    reply_markup = InlineKeyboardMarkup(keyboard)
-
     await update.message.reply_text(
-        "📋 LIZA'S LOAD PRICELIST\n\n"
-        "Choose a network below:",
-        reply_markup=reply_markup
+        "📋 LIZA'S LOAD PRICELIST\n\nChoose a network below:",
+        reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
 
