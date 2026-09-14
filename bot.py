@@ -320,7 +320,15 @@ def main():
 
     print("🤖 Bot is running...")
 
-    app.run_polling()
+    port = int(os.environ.get("PORT", 10000))
+    hostname = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
+
+    app.run_webhook(
+        listen="0.0.0.0",
+        port=port,
+        url_path=TOKEN,
+        webhook_url=f"https://{hostname}/{TOKEN}"
+    )
 
 
 if __name__ == "__main__":
