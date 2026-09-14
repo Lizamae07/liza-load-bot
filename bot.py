@@ -283,7 +283,6 @@ async def deduct(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # =========================
 
 
-```python
 async def pl(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     keyboard = [
