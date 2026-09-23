@@ -277,6 +277,12 @@ async def deduct(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"💰 New Balance: ₱{new_balance:.2f}"
     )
 
+
+# =========================
+# MODE OF PAYMENTS
+# =========================
+
+
 python
 async def mop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
@@ -307,7 +313,6 @@ async def pl(update: Update, context: ContextTypes.DEFAULT_TYPE):
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
     
-
 # =========================
 # MAIN
 # =========================
