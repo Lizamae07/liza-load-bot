@@ -277,6 +277,17 @@ async def deduct(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"💰 New Balance: ₱{new_balance:.2f}"
     )
 
+```python
+async def mop(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(
+        "𝗠𝗼𝗱𝗲 𝗼𝗳 𝗣𝗮𝘆𝗺𝗲𝗻𝘁:\n\n"
+        "📱 09954785610 L.A - (𝑮𝒄𝒂𝒔𝒉)\n"
+        "📱 09954785610 L.M.A - (𝑷𝒂𝒚𝒎𝒂𝒚𝒂)\n"
+        "🏦 413410217261 - (𝑷𝒉𝒊𝒍𝒊𝒑𝒑𝒊𝒏𝒆 𝑵𝒂𝒕𝒊𝒐𝒏𝒂𝒍 𝑩𝒂𝒏𝒌)\n"
+        "🏦 11588733421 - (𝑴𝒂𝒓𝒊𝒃𝒂𝒏𝒌)\n"
+        "📱 011693805580 - (𝑮𝒐𝑻𝒚𝒎𝒆)"
+    )
+```
 
 # =========================
 # PRICELIST
@@ -317,6 +328,7 @@ def main():
     app.add_handler(CommandHandler("add", add))
     app.add_handler(CommandHandler("deduct", deduct))
     app.add_handler(CommandHandler("pl", pl))
+    app.add_handler(CommandHandler("mop", mop))
 
     print("🤖 Bot is running...")
 
