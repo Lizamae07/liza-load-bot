@@ -277,7 +277,7 @@ async def deduct(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"💰 New Balance: ₱{new_balance:.2f}"
     )
 
-```python
+python
 async def mop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "𝗠𝗼𝗱𝗲 𝗼𝗳 𝗣𝗮𝘆𝗺𝗲𝗻𝘁:\n\n"
@@ -287,7 +287,7 @@ async def mop(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🏦 11588733421 - (𝑴𝒂𝒓𝒊𝒃𝒂𝒏𝒌)\n"
         "📱 011693805580 - (𝑮𝒐𝑻𝒚𝒎𝒆)"
     )
-```
+
 
 # =========================
 # PRICELIST
@@ -306,7 +306,7 @@ async def pl(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "📋 LIZA'S LOAD PRICELIST\n\nChoose a network below:",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
-
+    
 
 # =========================
 # MAIN
