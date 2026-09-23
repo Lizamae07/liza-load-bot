@@ -347,6 +347,5 @@ def main():
         webhook_url=f"https://{hostname}/{TOKEN}"
     )
 
-
 if __name__ == "__main__":
     main()
